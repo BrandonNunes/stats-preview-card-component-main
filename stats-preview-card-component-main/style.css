@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+body {
+    width: 100%;
+    height: 770px;
+}
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+.content {
+   background-color:  hsl(233, 47%, 7%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+    height: 445px;
+}
+.texts {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+    background-color: hsl(244, 38%, 16%);
+    width: 50%;
+    height: 445px;
+   
+}
+.texts h2, p, .info {
+    background-color: transparent;
+    text-align: left;
+    margin-left: 80px;
+}
+.texts h2 {
+    margin-top: 80px;
+    width: 375px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 30px;
+}
+.texts p {
+    font-size: 15px;
+    font-family:"Lexend Deca" ;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.destac {
+    color: hsl(277, 64%, 61%);
+    font-weight: 700;
+    font-family: 'Inter';
+}
+.info {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 375px;
+    
+}
+.info div {
+    width: 67px;
+    padding: 0;
+}
+.info div h2 {
+    padding: 0;
+    margin-left: 0;
+    font-size: 20px;
+    font-weight: 800;
+    height: 20px;
+    width: 67px;
+}
+.info div p{
+    margin-left: 0;
+    font-size: 12px;
+    height: 20px;
+    width: 75px;
+    text-transform: uppercase;
+}
+
+.img-content {
+    background-color: hsl(277, 64%, 61%);
+    height: 100%;
+    width: 50%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.img-content img {
+    filter:opacity(45%);
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.attribution {
+    position: relative;
+    transform: translate(25px,-100px);
+    z-index: 9;
+ color: white;
+}
+
+@media screen and (max-width: 375px) {
+    
+
+    body {
+        width: 100%;
+        height: 900px;
+        margin: 0 auto;
+    }
+    .content {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        height: 90%;
+        border-radius: 20px;
+    }
+        .img-content {
+            background-color: hsl(277, 64%, 61%);
+            height: 40%;
+            width: 100%;
+            order: initial;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 15px;
+        }
+        .img-content img {
+            filter:opacity(45%);
+            height: 100%;
+            width: 100%;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+        .texts {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            background-color: hsl(244, 38%, 16%);
+            width: 100%;
+            height: 60%;
+            order: 2;
+           border-top-left-radius: 0px;
+           border-bottom-right-radius: 15px;
+        }
+        .texts h2, p, .info {
+            background-color: transparent;
+        }
+        .texts h2 {
+           margin: 0 auto;
+           margin-top: 40px;
+            width: 78%;
+            height: 200px;
+            color: hsl(0, 0%, 100%);
+            text-align:center;
+            font-family: 'Inter';
+            font-weight: bold;
+            font-size: 28px;
+        }
+        .texts p {
+            padding: 0;
+            margin: 0 auto;
+            width: 78%;
+            transform: translateY(-60px);
+            text-align: center;
+            font-size: 15px;
+            font-family:"Lexend Deca" ;
+            color: hsla(0, 0%, 100%, 0.75);
+        }   
+        .info {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transform: translateY(-40px);
+            justify-content: center;
+            width: 100%;
+            height: 89px;
+
+    }
+    .info div {
+        width: 67px;
+        height: 60px;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .info div h2 {
+        padding: 0;
+        margin-left: 0;
+        font-size: 20px;
+        height: 20px;
+        width: 67px;
+    }
+    .info div p{
+        margin-left: 0;
+        font-size: 12px;
+        height: 20px;
+        width: 75px;
+        text-transform: uppercase;
+        transform: translateY(10px);
+    
+    }
+    .attribution {
+        position: relative;
+        transform: translate(13px,-30px);
+        z-index: 9;
+     color: white;
+    }
+   
+    
+}
